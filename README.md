@@ -1,3 +1,3 @@
 # Flat
 
-![alt text](Flat/Login.png)
+![alt text](Login.png)
