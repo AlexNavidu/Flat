@@ -1,17 +1,12 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, Text, TouchableOpacity } from 'react-native';
 
-export default class buttonSocial extends Component {
+export default class ButtonSocial extends Component {
   render() {
-
     return (
-
-      <Button
-        onPress={this.props.onPress}
-        title={this.props.name || " "}
-        color={this.props.color}
-        backgroundColor={this.props.backgroundColor}
-        />
+      <TouchableOpacity {...this.props} style={{backgroundColor: this.props.backgroundColor}}>
+        { this.props.children }
+      </TouchableOpacity>
     );
   }
 };
